@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+
+  <!-- Fuentes Googleapis.com -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;600&display=swap"
+    rel="stylesheet">
+
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- Boostrap icon -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <!--Estilos -->
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="./styles/cards-index.css">
+  <link rel="stylesheet" href="./styles/tienda.css">
+  <link rel="stylesheet" href="./styles/reviews.css">
+
+  <title>CheBonita-Tienda online</title>
+</head>
+
+<body>
+  <header class="bg-light container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+      <div class="container">
+        <!-- Logo y Botón de Hamburguesa -->
+        <a class="navbar-brand d-flex align-items-center" href="/">
+          <img src="./img/logo.webp" alt="LOGO Che Bonita">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menú colapsable y Barra de Búsqueda -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#new">NEW Collection</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./tienda.html">Tienda</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Precios especiales
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#sale">Ediciones especiales</a></li>
+                <li><a class="dropdown-item" href="#basicos">Nuestros Basicos</a></li>
+                <li><a class="dropdown-item" href="#carteras">Carteras</a></li>
+                <li><a class="dropdown-item" href="#vestidos">Vestidos</a></li>
+                <li><a class="dropdown-item" href="./proximamente.html">Joyeria</a></li>
+                <li><a class="dropdown-item" href="./proximamente.html">Zapatos</a></li>
+                <li><a class="dropdown-item" href="./proximamente.html">Relojes</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#gift-card">GIFT CARD</a></li>
+              </ul>
+            </li>
+
+          </ul>
+
+          <!-- Barra de Búsqueda-->
+          <form class="d-flex flex-grow-1" role="search">
+            <input class="form-control me-2 flex-grow-1" type="search" placeholder="¿Qué estás buscando..."
+              aria-label="Buscar">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+
+        <!-- LogIn, Ayuda y Carrito - Visible en pantallas grandes (lg y superiores) -->
+        <div class="d-none d-lg-flex align-items-center ms-3">
+          <a class="nav-link" href="./proximamente.html">Log in</a>
+          <a class="nav-link" href="./contacto.html">Contacto</a>
+          <a class="nav-link" href="./proximamente.html">Carrito</a>
+        </div>
+
+        <!-- Iconos para pantallas pequeñas (sm) -->
+        <div class="d-flex d-lg-none ms-auto">
+          <a class="nav-link" href="./proximamente.html" aria-label="Log In"><i class="bi bi-person"></i></a>
+          <a class="nav-link" href="./contacto.html" aria-label="Contacto"><i class="bi bi-file-earmark-text"></i></a>
+          <a class="nav-link" href="./proximamente.html" aria-label="Carrito"><i class="bi bi-bag"></i></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main >
+<!-- El ancla "top" al principio de la página -->
+<div id="top"></div
+
+    <!-- Carrusel de Logos Clickeables -->
+    <div id="logoCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- Primera diapositiva -->
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-3">
+              <a href="http://www.chanel.com/" target="_blank" rel="noopener noreferrer">
+                <img src="./img/chanel.gif" class="d-block mx-auto" alt="Chanel" >
+              </a>
+            </div>
+            <div class="col-3">
+              <a href="https://www.rapsodia.com.mx/new-in" target="_blank" rel="noopener noreferrer">
+                <img src="./img/rapsodia.ai_.png" class="d-block mx-auto" alt="Rapsodia" >
+              </a>
+            </div>
+            <div class="col-3">
+              <a href="https://www.prune.com" target="_blank" rel="noopener noreferrer">
+                <img src="./img/prune.png" class="d-block mx-auto" alt="Prune" >
+              </a>
+            </div>
+            <div class="col-3">
+              <a href="https://www.dior.com" target="_blank" rel="noopener noreferrer">
+                <img src="./img/Dior.png" class="d-block mx-auto" alt="Dior" >
+              </a>              
+            </div>            
+          </div>
+        </div>
+<!-- Segunda diapositiva -->
+<div class="carousel-item ">
+  <div class="row">
+    <div class="col-3">
+      <a href="http://www.chanel.com/" target="_blank" rel="noopener noreferrer">
+        <img src="./img/chanel.gif" class="d-block mx-auto" alt="Chanel">
+      </a>
+    </div>
+    <div class="col-3">
+      <a href="https://www.rapsodia.com.mx/new-in" target="_blank" rel="noopener noreferrer">
+        <img src="./img/rapsodia.ai_.png" class="d-block mx-auto" alt="Rapsodia">
+      </a>
+    </div>
+    <div class="col-3">
+      <a href="https://www.prune.com" target="_blank" rel="noopener noreferrer">
+        <img src="./img/prune.png" class="d-block mx-auto" alt="Prune">
+      </a>
+    </div>
+    <div class="col-3">
+      <a href="https://www.dior.com" target="_blank" rel="noopener noreferrer">
+        <img src="./img/Dior.png" class="d-block mx-auto" alt="Dior">
+      </a>
+    </div>
+    
+  </div>
+</div>
+
+
+
+
+      </div>
+      <!-- Controles de Carrusel -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#logoCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#logoCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+<!-- Mensaje con alert -->
+<div class="alert alert-info d-flex justify-content-between align-items-center" role="alert">
+  <div class="text-center mx-auto" >
+    <strong >¡Recuerda el evento de marcas de lujo internacionales y argentinas!<br> Che Bonita te espera el 23/12 a las 20 hs. en el Hotel Sheraton Buenos Aires - Reserva tu lugar en nuestra sucursal!</strong><br>
+    Descubre las últimas colecciones de tus marcas favoritas: Gucci, Cardon, Rapsodia y muchas más.
+  </div>
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+
+
+
+    <!-- Sección de productos con Flexbox -Tienda Online -->
+    <div class="store-layout">
+      <nav class="store-nav">
+        <h2>Categorías</h2>
+        <ul class="category-list">
+          <li><a href="#sale">Ediciones especiales</a></li>
+          <li><a href="#proximamente">Nuestros Básicos</a></li>
+          <li><a href="#carteras">Carteras</a></li>
+          <li><a href="#vestidos">Vestidos</a></li>
+          <li><a href="#proximamente">Joyería</a></li>
+          <li><a href="#proximamente">Zapatos</a></li>
+          <li><a href="#proximamente">Relojes</a></li>
+        </ul>
+      </nav>
+      <div class="store-main">
+        <h2 id="products-title" class="visually-hidden">Catálogo de productos</h2>
+        <section id="sale"class="product-cards " aria-labelledby="sale">
+          <h2>Ediciones Especiales</h2>
+          <ul class="product-list">
+            <!-- Producto 1 -->
+            <li class="product-card">
+              <figure class="product-figure">
+                <img src="./img/cartera.webp" alt="Product carteras">
+                <figcaption class="caption">
+                  <h3 class="caption-title">Cartera Julieta</h3>
+                  <div class="location">Fabricado en Argentina</div>
+                  <p>"Bolso icónico de suave piel y delicadeza, perfecto para un look moderno."</p>
+                  <div class="price">
+                    <span class="original-price">$135000</span>
+                    <span class="discount-price">$108000</span> <!-- Precio con descuento -->
+                  </div>
+                  <button class="discount-btn">20% Descuento</button>
+                  <p class="stock-status">Ultimas unidades</p>
+                  <a href="./proximamente.html" class="add-to-cart">Agregar al carrito</a>
+                  <a href="./proximamente.html" target="_blank" class="btn btn-outline-success btn-center">Ver más</a>
+                </figcaption>
+              </figure>
+            </li>
+
+            <!-- Producto 2 -->
+            <li class="product-card">
+              <figure class="product-figure">
+                <img src="./img/anteojos.webp" alt="Product anteojos">
+                <figcaption class="caption">
+                  <h3 class="caption-title">Anteojos Caramel Prada</h3>
+                  <div class="location">Fabricado en Italia</div>
+                  <p>De una firma reconocida por su elegancia, este modelo garantiza estilo y calidad.</p>
+                  <div class="price">
+                    <span class="original-price">$79500</span>
+                    <span class="discount-price">$63200</span> <!-- Precio con descuento -->
+                  </div>
+                  <button class="discount-btn">20% Descuento</button>
+                  <p class="stock-status">In Stock</p>
+                  <a href="./proximamente.html" class="add-to-cart">Agregar al carrito</a>
+                  <a href="./proximamente.html" target="_blank" class="btn btn-outline-success btn-center">Ver más</a>
+                </figcaption>
+              </figure>
+            </li>
+
+            <!-- Producto 3 -->
+            <li class="product-card">
+              <figure class="product-figure">
+                <img src="./img/zapato-dorado.webp" alt="Product zapato">
+                <figcaption class="caption">
+                  <h3 class="caption-title">Mocasines de mujer</h3>
+                  <div class="location">Fabricado en Argentina</div>
+                  <p>Fabricados en materiales de alta calidad, con un acabado suave y brillante que ofrece durabilidad y
+                    un
+                    look
+                    impecable.</p>
+                  <div class="price">
+                    <span class="original-price">$112000</span>
+                    <span class="discount-price">$100800</span> <!-- Precio con descuento -->
+                  </div>
+                  <button class="discount-btn">10% Descuento</button>
+                  <p class="stock-status">Ultimas unidades</p>
+                  <a href="./proximamente.html" class="add-to-cart">Agregar al carrito</a>
+                  <a href="./proximamente.html" target="_blank" class="btn btn-outline-success btn-center">Ver más</a>
+                </figcaption>
+              </figure>
+            </li>
+
+            <!-- Producto 4 -->
+            <li class="product-card">
+              <figure class="product-figure">
+                <img src="./img/watch.jpeg" alt="Product Reloj Mujer Zara">
+                <figcaption class="caption">
+                  <h3 class="caption-title">Reloj Zara woman</h3>
+                  <div class="location">Fabricado en China-Inditex</div>
+                  <p>Minimalista, ideal para complementar otros accesorios o llevar solo para un look sofisticado.</p>
+                  <div class="price">
+                    <span class="original-price">$158000</span>
+                    <span class="discount-price">$142200</span> <!-- Precio con descuento -->
+                  </div>
+                  <button class="discount-btn">10% Descuento</button>
+                  <p class="stock-status">In Stock</p>
+                  <a href="./proximamente.html" class="add-to-cart">Agregar al carrito</a>
+                  <a href="./proximamente.html" target="_blank" class="btn btn-outline-success btn-center">Ver más</a>
+                </figcaption>
+              </figure>
+            </li>
+
+            <!-- Producto 5 -->
+            <li class="product-card">
+              <figure class="product-figure">
+                <img src="./img/jean.webp" alt="Product campera de jean Mujer Zara">
+                <figcaption class="caption">
+                  <h3 class="caption-title">Campera de Jean Zara woman</h3>
+                  <div class="location">Fabricado en China-Inditex</div>
+                  <p>Denim de alta calidad, resistente y cómodo, que brinda un toque fresco y casual.</p>
+                  <div class="price">
+                    <span class="original-price">$94500</span>
+                    <span class="discount-price">$80325</span> <!-- Precio con descuento -->
+                  </div>
+                  <button class="discount-btn">15% descuento</button>
+                  <p class="stock-status">In Stock</p>
+                  <a href="./proximamente.html" class="add-to-cart">Agregar al carrito</a>
+                  <a href="./proximamente.html" target="_blank" class="btn btn-outline-success btn-center">Ver más</a>
+                </figcaption>
+              </figure>
+            </li>
+
+          </ul>
+        </section>
+     
+        <section id="carteras"class="product-cards " aria-labelledby="carteras-title">
+  <h2 id="carteras-title">Carteras</h2>
+  <ul class="product-list">
+    <li class="product-card">
+      <figure class="product-figure">
+        <img src="https://cdn.dummyjson.com/products/images/womens-bags/Blue%20Women's%20Handbag/thumbnail.png"
+          alt="Blue Women's Handbag">
+        <figcaption class="caption">
+          <h3 class="caption-title">Blue Women's Handbag</h3>
+          <div class="location">Marca: Fashionista</div>
+          <p>The Blue Women's Handbag is a stylish and spacious accessory for everyday use. With a vibrant blue color
+            and multiple compartments, it combines fashion and functionality.</p>
+          <div class="price">
+            <span class="original-price">$49.99</span>
+            <span class="discount-price">$47.35</span> <!-- Precio con descuento -->
+          </div>
+          <button class="discount-btn">5% descuento</button>
+          <p class="stock-status">In Stock</p>
+          <a href="./proximamente.html" class="add-to-cart">Agregar al carrito</a>
+          <a href="./proximamente.html" target="_blank" class="btn btn-outline-success btn-center">Ver más</a>
+        </figcaption>
+      </figure>
+    </li>
+    <li class="product-card">
+      <figure class="product-figure">
+        <img src="https://cdn.dummyjson.com/products/images/womens-bags/Heshe%20Women's%20Leather%20Bag/thumbnail.png"
+          alt="Heshe Women's Leather Bag">
+        <figcaption class="caption">
+          <h3 class="caption-title">Heshe Women's Leather Bag</h3>
+          <div class="location">Marca: Heshe</div>
+          <p>The Heshe Women's Leather Bag is a luxurious and high-quality leather bag for the sophisticated woman. With
+            a timeless design and durable craftsmanship, it's a versatile accessory.</p>
+          <div class="price">
+            <span class="original-price">$129.99</span>
+            <span class="discount-price">$119.99</span> <!-- Precio con descuento -->
+          </div>
+          <button class="discount-btn">7.74% descuento</button>
+          <p class="stock-status">In Stock</p>
+          <a href="./proximamente.html" class="add-to-cart">Agregar al carrito</a>
+          <a href="./proximamente.html" target="_blank" class="btn btn-outline-success btn-center">Ver más</a>
+        </figcaption>
+      </figure>
+    </li>
+    <li class="product-card">
+      <figure class="product-figure">
+        <img src="https://cdn.dummyjson.com/products/images/womens-bags/Prada%20Women%20Bag/thumbnail.png"
+          alt="Prada Women Bag">
+        <figcaption class="caption">
+          <h3 class="caption-title">Prada Women Bag</h3>
+          <div class="location">Marca: Prada</div>
+          <p>The Prada Women Bag is an iconic designer bag that exudes elegance and luxury. Crafted with precision and
+            featuring the Prada logo, it's a statement piece for fashion enthusiasts.</p>
+          <div class="price">
+            <span class="original-price">$599.99</span>
+            <span class="discount-price">$491.69</span> <!-- Precio con descuento -->
+          </div>
+          <button class="discount-btn">18.3% descuento</button>
+          <p class="stock-status">In Stock</p>
+          <a href="./proximamente.html" class="add-to-cart">Agregar al carrito</a>
+          <a href="./proximamente.html" target="_blank" class="btn btn-outline-success btn-center">Ver más</a>
+        </figcaption>
+      </figure>
+    </li>
+  </ul>
+</section>
+
+  <section id="vestidos" class="product-cards" aria-labelledby="vestidos-title">
+    <h2 id="vestidos-title">Vestidos</h2>
+    <ul class="product-list">
+      <!-- Producto 1: Black Women's Gown -->
+      <li class="product-card">
+        <figure class="product-figure">
+          <img src="https://cdn.dummyjson.com/products/images/womens-dresses/Black%20Women's%20Gown/thumbnail.png"
+            alt="Black Women's Gown">
+          <figcaption class="caption">
+            <h3 class="caption-title">Black Women's Gown</h3>
+            <div class="location">Marca: Fashionista</div>
+            <p>The Black Women's Gown is an elegant and timeless evening gown. With a sleek black design, it's perfect for
+              formal events and special occasions, exuding sophistication and style.</p>
+            <div class="price">
+              <span class="original-price">$129.99</span>
+              <span class="discount-price">$122.97</span> <!-- Precio con descuento -->
+            </div>
+            <button class="discount-btn">5% descuento</button>
+            <p class="stock-status">In Stock</p>
+            <a href="./proximamente.html" class="add-to-cart">Agregar al carrito</a>
+            <a href="./proximamente.html" target="_blank" class="btn btn-outline-success btn-center">Ver más</a>
+          </figcaption>
+        </figure>
+      </li>
+  
+      <!-- Producto 2: Corset Leather With Skirt -->
+      <li class="product-card">
+        <figure class="product-figure">
+          <img
+            src="https://cdn.dummyjson.com/products/images/womens-dresses/Corset%20Leather%20With%20Skirt/thumbnail.png"
+            alt="Corset Leather With Skirt">
+          <figcaption class="caption">
+            <h3 class="caption-title">Corset Leather With Skirt</h3>
+            <div class="location">Marca: Fashionista</div>
+            <p>The Corset Leather With Skirt is a bold and edgy ensemble that combines a stylish corset with a matching
+              skirt. Ideal for fashion-forward individuals, it makes a statement at any event.</p>
+            <div class="price">
+              <span class="original-price">$89.99</span>
+              <span class="discount-price">$72.61</span> <!-- Precio con descuento -->
+            </div>
+            <button class="discount-btn">19% descuento</button>
+            <p class="stock-status">In Stock</p>
+          <a href="./proximamente.html" class="add-to-cart">Agregar al carrito</a>
+          <a href="./proximamente.html" target="_blank" class="btn btn-outline-success btn-center">Ver más</a>
+          </figcaption>
+        </figure>
+      </li>
+  
+      <!-- Producto 3: Corset With Black Skirt -->
+      <li class="product-card">
+        <figure class="product-figure">
+          <img src="https://cdn.dummyjson.com/products/images/womens-dresses/Corset%20With%20Black%20Skirt/thumbnail.png"
+            alt="Corset With Black Skirt">
+          <figcaption class="caption">
+            <h3 class="caption-title">Corset With Black Skirt</h3>
+            <div class="location">Marca: Fashionista</div>
+            <p>The Corset With Black Skirt is a chic and versatile outfit that pairs a fashionable corset with a classic
+              black skirt. It offers a trendy and coordinated look for various occasions.</p>
+            <div class="price">
+              <span class="original-price">$79.99</span>
+              <span class="discount-price">$68.33</span> <!-- Precio con descuento -->
+            </div>
+            <button class="discount-btn">14% descuento</button>
+            <p class="stock-status">In Stock</p>
+            <a href="./proximamente.html" class="add-to-cart">Agregar al carrito</a>
+            <a href="./proximamente.html" target="_blank" class="btn btn-outline-success btn-center">Ver más</a>
+          </figcaption>
+        </figure>
+      </li>
+  
+      <!-- Producto 4: Dress Pea -->
+      <li class="product-card">
+        <figure class="product-figure">
+          <img src="https://cdn.dummyjson.com/products/images/womens-dresses/Dress%20Pea/thumbnail.png" alt="Dress Pea">
+          <figcaption class="caption">
+            <h3 class="caption-title">Dress Pea</h3>
+            <div class="location">Marca: Fashionista</div>
+            <p>The Dress Pea is a stylish and comfortable dress with a pea pattern. Perfect for casual outings, it adds a
+              playful and fun element to your wardrobe, making it a great choice for day-to-day wear.</p>
+            <div class="price">
+              <span class="original-price">$49.99</span>
+              <span class="discount-price">$45.10</span> <!-- Precio con descuento -->
+            </div>
+            <button class="discount-btn">9% descuento</button>
+            <p class="stock-status">In Stock</p>
+            <a href="./proximamente.html" class="add-to-cart">Agregar al carrito</a>
+            <a href="./tienda.html" target="_blank" class="btn btn-outline-success btn-center">Ver más</a>
+          </figcaption>
+        </figure>
+      </li>
+    </ul>
+  </section>
+<section id="proximamente" class="product-cards"" aria-labelledby="proximamente-title">
+  <h2 id="proximamente-title">Próximamente</h2>
+  <p>Estos productos estarán disponibles pronto. ¡Mantente atenta para más detalles!</p>
+
+
+
+</div>
+</div>
+<!-- Botón para subir hacia arriba -->
+<a href="#top" class="btn-subir" id="btnSubir">
+  ↑ Subir
+</a>
+  </main>
+
+  <footer class="text-center container-fluid  py-4">
+    <div class="container">
+      <!-- Información de contacto y Home -->
+      <p class="mb-1">&copy; 2024 Che Bonita. Buenos Aires, Argentina. Todos los derechos reservados.</p>
+      <p>
+        <a href="/" class="text-decoration-none">Inicio</a> |
+        <a href="mailto:contacto@chebonita.com" class="text-decoration-none">contacto@chebonita.com</a> |
+        <a href="tel:+541112345678" class="text-decoration-none">+54 11 1234-5678</a>
+      </p>
+      <!-- Redes sociales -->
+      <div class="social-icons d-flex justify-content-center mt-2">
+        <a href="https://www.instagram.com" target="_blank" class="btn-social mx-2">
+          <i class="bi bi-instagram fs-4"></i>
+        </a>
+        <a href="https://www.whatsapp.com/" target="_blank" class="btn-social mx-2">
+          <i class="bi bi-whatsapp fs-4"></i>
+        </a>
+        <a href="https://www.facebook.com" target="_blank" class="btn-social mx-2">
+          <i class="bi bi-facebook fs-4"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
