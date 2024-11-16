@@ -76,7 +76,7 @@ El pie de página contiene información adicional sobre la tienda, enlaces a pol
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/tu-usuario/che-bonita.git
+   git clone [https://github.com/EliMCN/che-bonita.git]
    ```
 
 2. Navega al directorio del proyecto:
