@@ -1,0 +1,197 @@
+{
+  "products": [
+    {
+      "id": 1.1,
+      "title": "Cartera Julieta",
+      "description": "Bolso icónico de suave piel y delicadeza, perfecto para un look moderno.",
+      "category": ["ediciones-especiales", "womens-bags"],
+      "price": 135000,
+      "discountPercentage": 20,
+      "rating": 4.8,
+      "stock": 76,
+      "tags": ["bolsos", "moda", "piel"],
+      "brand": "Julieta",
+      "sku": "A5HC6SCF",
+      "weight": 2,
+      "dimensions": {
+        "width": 16.06,
+        "height": 14.91,
+        "depth": 28.61
+      },
+      "warrantyInformation": "Lifetime warranty",
+      "shippingInformation": "Ships in 1 month",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 5,
+          "comment": "Excelente calidad.",
+          "date": "2024-05-23T08:56:21.627Z",
+          "reviewerName": "Juan Pérez",
+          "reviewerEmail": "juan.perez@example.com"
+        }
+      ],
+      "image": "./img/cartera.webp",
+      "location": "Fabricado en Argentina"
+    },
+    {
+      "id": 1.2,
+      "title": "Anteojos Caramel Prada",
+      "description": "De una firma reconocida por su elegancia, este modelo garantiza estilo y calidad.",
+      "category": ["ediciones-especiales", "womens-watches"],
+      "price": 79500,
+      "discountPercentage": 20,
+      "discountedPrice": 63200,
+      "rating": 4.5,
+      "stock": 45,
+      "tags": ["anteojos", "moda", "elegancia"],
+      "brand": "Prada",
+      "sku": "B7HD8ZFR",
+      "weight": 0.5,
+      "dimensions": {
+        "width": 14.5,
+        "height": 5.2,
+        "depth": 3
+      },
+      "warrantyInformation": "2 years warranty",
+      "shippingInformation": "Ships in 2 weeks",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 5,
+          "comment": "Excelente calidad y estilo.",
+          "date": "2024-05-23T08:56:21.627Z",
+          "reviewerName": "Aria Parker",
+          "reviewerEmail": "aria.parker@x.dummyjson.com"
+        }
+      ],
+      "image": "./img/anteojos.webp",
+      "location": "Fabricado en Italia"
+    },
+    {
+      "id":1.3,
+      "title": "Mocasines de mujer",
+      "description": "Fabricados en materiales de alta calidad, con un acabado suave y brillante que ofrece durabilidad y un look impecable.",
+      "category": ["ediciones-especiales","womens-shoes","basic"],
+      "price": 112000,
+      "discountPercentage": 10,
+      "discountedPrice": 100800,
+      "rating": 4.7,
+      "stock": 35,
+      "tags": ["zapatos", "moda", "mujer"],
+      "brand": "Exclusivo",
+      "sku": "C8LM5KXS",
+      "weight": 0.7,
+      "dimensions": {
+        "width": 22,
+        "height": 8,
+        "depth": 30
+      },
+      "warrantyInformation": "1 year warranty",
+      "shippingInformation": "Ships in 1-2 weeks",
+      "availabilityStatus": "Últimas unidades",
+      "reviews": [
+        {
+          "rating": 5,
+          "comment": "¡Me encantaron!",
+          "date": "2024-05-23T08:56:21.627Z",
+          "reviewerName": "Hazel Gardner",
+          "reviewerEmail": "hazel.gardner@x.dummyjson.com"
+        }
+      ],
+      "image": "./img/zapato-dorado.webp",
+      "location": "Fabricado en Argentina"
+    },
+    {
+      "id": 1.4,
+      "title": "Reloj Zara woman",
+      "description": "Minimalista, ideal para complementar otros accesorios o llevar solo para un look sofisticado.",
+      "category": ["ediciones-especiales", "womens-watches", "basic"],
+      "price": 158000,
+      "discountPercentage": 10,
+      "discountedPrice": 142200,
+      "rating": 4.6,
+      "stock": 60,
+      "tags": ["relojes", "moda", "mujer"],
+      "brand": "Zara",
+      "sku": "D2ZP9WQY",
+      "weight": 0.3,
+      "dimensions": {
+        "width": 5.5,
+        "height": 5.5,
+        "depth": 1.2
+      },
+      "warrantyInformation": "1 year warranty",
+      "shippingInformation": "Ships in 1-2 weeks",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 4,
+          "comment": "Buen reloj, pero podría mejorar.",
+          "date": "2024-05-23T08:56:21.627Z",
+          "reviewerName": "Alex Gomez",
+          "reviewerEmail": "alex.gomez@x.dummyjson.com"
+        }
+      ],
+      "image": "./img/watch.jpeg",
+      "location": "Fabricado en China-Inditex"
+    },
+    {
+      "id": 1.5,
+      "title": "Campera de Jean Zara woman",
+      "description": "Denim de alta calidad, resistente y cómodo, que brinda un toque fresco y casual.",
+      "category": ["ediciones-especiales", "womens-dresses", "basic"],
+      "price": 94500,
+      "discountPercentage": 15,
+      "discountedPrice": 80325,
+      "rating": 4.4,
+      "stock": 50,
+      "tags": ["ropa", "denim", "casual"],
+      "brand": "Zara",
+      "sku": "E4YQ7LMN",
+      "weight": 1.5,
+      "dimensions": {
+        "width": 45,
+        "height": 60,
+        "depth": 5
+      },
+      "warrantyInformation": "2 years warranty",
+      "shippingInformation": "Ships in 2 weeks",
+      "availabilityStatus": "In Stock",
+      "reviews": [
+        {
+          "rating": 5,
+          "comment": "Muy cómoda y de buen material.",
+          "date": "2024-05-23T08:56:21.627Z",
+          "reviewerName": "Sofia López",
+          "reviewerEmail": "sofia.lopez@x.dummyjson.com"
+        }
+      ],
+      "image": "./img/jean.webp",
+      "location": "Fabricado en China-Inditex"
+    },
+    {
+      "id": 1.6,
+      "title": "Gift Card",
+      "description": "Regala la libertad de elegir con una Gift Card digital para nuestra tienda.",
+      "category": ["gift-cards"],
+      "isGiftCard": "true",
+      "discountPercentage": null,
+      "rating": null,
+      "price": 0.00,
+      "stock": 99999,
+      "tags": ["regalo", "gift-card", "digital"],
+      "brand": "Nuestra tienda",
+      "sku": "GIFT123",
+      "customizable": true,
+      "customizableValues": [5000, 10000, 20000, 50000],
+      "weight": 0,
+      "dimensions": null,
+      "warrantyInformation": null,
+      "shippingInformation": "Entrega digital inmediata",
+      "availabilityStatus": "Disponible siempre",
+      "reviews": [],
+      "image": "./img/che-giftcard.PNG",
+      "location": null
+    }
+  ]
+}
