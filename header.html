@@ -1,0 +1,69 @@
+<header class="bg-light container-fluid">
+  <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+    <div class="container">
+      <!-- Logo y Botón de Hamburguesa -->
+      <a class="navbar-brand d-flex align-items-center" href="/">
+        <img src="./img/logo.webp" alt="LOGO Che Bonita">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menú colapsable y Barra de Búsqueda -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html#new">NEW Collection</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./tienda.html">Tienda</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Precios especiales
+            </a>
+            <!--  Los Links de filtrado por categoria se desarrollaran a futuro. Se encuentra funcional el buscador del NAV (categorias en Ingles)-->
+            
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#" data-category="ediciones-especiales" >Ediciones especiales</a></li>
+              <li><a class="dropdown-item" href="#" data-category="basic">Nuestros Basicos</a></li>
+              <li><a class="dropdown-item" href="#" data-category="womens-bags">Carteras</a></li>
+              <li><a class="dropdown-item" href="#" data-category="womens-dresses">Vestidos</a></li>
+              <li><a class="dropdown-item" href="#" data-category="womens-jewelry" >Joyeria</a></li>
+              <li><a class="dropdown-item" href="#" data-category="womens-shoes">Zapatos</a></li>
+              <li><a class="dropdown-item" href="#" data-category="womens-watches"  >Relojes</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#" data-category="gift-cards">GIFT CARD</a></li>
+            </ul>
+          </li>
+
+        </ul>
+
+        <!-- Barra de Búsqueda -->
+        <form id="search-form" class="d-flex flex-grow-1" role="search">
+          <input id="search-input" class="form-control me-2 flex-grow-1" type="search" placeholder="¿Qué estás buscando..."
+            aria-label="Buscar">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
+
+      <!-- LogIn, Ayuda y Carrito - Visible en pantallas grandes (lg y superiores) -->
+      <div class="d-none d-lg-flex align-items-center ms-3">
+        <a class="nav-link" href="./proximamente.html">Log in</a>
+        <a class="nav-link" href="./contacto.html">Contacto</a>
+        <a class="nav-link " href="./cart.html">Carrito<span id="cartCountDesktop" class="cartCount d-none"></span></a>
+      </div>
+
+      <!-- Iconos para pantallas pequeñas (sm) -->
+      <div class="d-flex d-lg-none ms-auto">
+        <a class="nav-link" href="./proximamente.html" aria-label="Log In"><i class="bi bi-person"></i></a>
+        <a class="nav-link" href="./contacto.html" aria-label="Contacto"><i class="bi bi-file-earmark-text"></i></a>
+        <a class="nav-link" href="./cart.html" aria-label="Carrito"><i class="bi bi-bag"></i><span
+            id="cartCountMobile"class="cartCount d-none" ></span></a>
+      </div>
+    </div>
+  </nav>
+</header>

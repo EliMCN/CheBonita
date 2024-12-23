@@ -29,78 +29,12 @@
   <link rel="stylesheet" href="./styles/reviews.css">
 
   <title>CheBonita-Inicio</title>
+  <script src="./js/cart.js" defer></script>
 </head>
 
 <body>
-  <header class="bg-light container-fluid">
-    <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
-      <div class="container">
-        <!-- Logo y Botón de Hamburguesa -->
-        <a class="navbar-brand d-flex align-items-center" href="/">
-          <img src="./img/logo.webp" alt="LOGO Che Bonita" >
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Menú colapsable y Barra de Búsqueda -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#new">NEW Collection</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./tienda.html">Tienda</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Precios especiales
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#sale">Ediciones especiales</a></li>
-                <li><a class="dropdown-item" href="#basicos">Nuestros Basicos</a></li>
-                <li><a class="dropdown-item" href="#carteras">Carteras</a></li>
-                <li><a class="dropdown-item" href="#vestidos">Vestidos</a></li>
-                <li><a class="dropdown-item" href="#joyeria">Joyeria</a></li>
-                <li><a class="dropdown-item" href="#zapatos">Zapatos</a></li>
-                <li><a class="dropdown-item" href="#relojes">Relojes</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#gift-card">GIFT CARD</a></li>
-              </ul>
-            </li>
-            
-          </ul>
-
-          <!-- Barra de Búsqueda-->
-          <form class="d-flex flex-grow-1" role="search">
-            <input class="form-control me-2 flex-grow-1" type="search" placeholder="¿Qué estás buscando..."
-              aria-label="Buscar">
-            <button class="btn btn-outline-success" type="submit">Buscar</button>
-          </form>
-        </div>
-
-        <!-- LogIn, Ayuda y Carrito - Visible en pantallas grandes (lg y superiores) -->
-        <div class="d-none d-lg-flex align-items-center ms-3">
-          <a class="nav-link" href="./proximamente.html">Log in</a>
-          <a class="nav-link" href="./contacto.html">Contacto</a>
-          <a class="nav-link" href="./proximamente.html">Carrito</a>
-        </div>
-
-        <!-- Iconos para pantallas pequeñas (sm) -->
-        <div class="d-flex d-lg-none ms-auto">
-          <a class="nav-link" href="./proximamente.html" aria-label="Log In"><i class="bi bi-person"></i></a>
-          <a class="nav-link" href="./contacto.html" aria-label="Contacto"><i class="bi bi-file-earmark-text"></i></a>
-          <a class="nav-link" href="./proximamente.html" aria-label="Carrito"><i class="bi bi-bag"></i></a>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  
+  <!-- Header se carga aquí -->
+  <div id="header-placeholder"></div> 
 
   <main class="container">
     <!-- El ancla "top" al principio de la página -->
@@ -115,7 +49,7 @@
     </section>
 <!-- New coleccion -->
     <article >
-      <div class="collection-2025">
+      <div  class="collection-2025">
         <h2 class="text-beaver">Nueva Coleccion 2025</h2>
         <p>Presentamos un estilo femenino, con toque de elegancia e identidad argentina.</p>
         <a href="#new" class="btn btn-custom">Descubre más</a>
@@ -256,78 +190,8 @@
   <section class="product-cards " aria-labelledby="products-title">
     <h2 id="products-title" class="visually-hidden">Catálogo de productos</h2>
   
-    <ul class="product-list">
-      <!-- Producto 1 -->
-      <li class="product-card">
-        <figure class="product-figure">
-          <img src="./img/cartera.webp" alt="Product carteras">
-          <figcaption class="caption">
-            <h3 class="caption-title">Cartera Julieta</h3>
-            <div class="location">Fabricado en Argentina</div>
-            <p>"Bolso icónico de suave piel y delicadeza, perfecto para un look moderno."</p>
-            
-          </figcaption>
-         
-        </figure>
-        <a href="./tienda.html" target="_blank" class="btn btn-outline-success btn-center">Ver más</a>
-      </li>
-  
-      <!-- Producto 2 -->
-      <li class="product-card">
-        <figure class="product-figure">
-          <img src="./img/anteojos.webp" alt="Product anteojos">
-          <figcaption class="caption">
-            <h3 class="caption-title">Anteojos Caramel Prada</h3>
-            <div class="location">Fabricado en Italia</div>
-            <p>De una firma reconocida por su elegancia, este modelo garantiza estilo y calidad.</p>
-            
-          </figcaption>
-        </figure>
-        <a href="./tienda.html" target="_blank" class="btn btn-outline-success btn-center">Ver más</a>
-      </li>
-  
-     
-    <!-- Producto 3 -->
-        <li class="product-card ">
-          <figure class="product-figure">
-            <img src="./img/zapato-dorado.webp" alt="Product zapato">
-            <figcaption class="caption">
-              <h3 class="caption-title">Mocasines de mujer</h3>
-              <div class="location">Fabricado en Argentina</div>
-              <p>Fabricados en materiales de alta calidad, con un acabado suave y brillante que ofrece durabilidad y un look
-                impecable.</p>
-              
-            </figcaption>
-          </figure>
-          <a href="./tienda.html" target="_blank" class="btn btn-outline-success btn-center">Ver más</a>
-        </li>
-
-        <!-- Producto 4 -->
-        <li class="product-card">
-          <figure class="product-figure">
-            <img src="./img/watch.jpeg" alt="Product Reloj Mujer Zara">
-            <figcaption class="caption">
-              <h3 class="caption-title">Reloj Zara woman</h3>
-              <div class="location">Fabricado en China-Inditex</div>
-              <p>Minimalista, ideal para complementar otros accesorios o llevar solo para un look sofisticado.</p>              
-            </figcaption>
-          </figure>
-          <a href="./tienda.html" target="_blank" class="btn btn-outline-success btn-center">Ver más</a>
-        </li>
-
-        <!-- Producto 5 -->
-        <li class="product-card ">
-          <figure class="product-figure">
-            <img src="./img/jean.webp" alt="Product campera de jean Mujer Zara">
-            <figcaption class="caption">
-              <h3 class="caption-title">Campera de Jean Zara woman</h3>
-              <div class="location">Fabricado en China-Inditex</div>
-              <p>Denim de alta calidad, resistente y cómodo, que brinda un toque fresco y casual.</p>
-              
-            </figcaption>
-          </figure>
-          <a href="./tienda.html" target="_blank" class="btn btn-outline-success btn-center">Ver más</a>
-        </li>
+    <ul class="product-list ">
+      <!-- Se reemplaza productos hardcodeados por dinamicos-->
       </ul>
     </article>
     </div>
@@ -478,35 +342,17 @@
 </a>
   </main>
 
-  <footer class="text-center container-fluid  py-4">
-    <div class="container">
-      <!-- Información de contacto y Home -->
-      <p class="mb-1">&copy; 2024 Che Bonita. Buenos Aires, Argentina. Todos los derechos reservados.</p>
-      <p>
-        <a href="/" class="text-decoration-none">Inicio</a> |
-        <a href="mailto:contacto@chebonita.com" class="text-decoration-none">contacto@chebonita.com</a> |
-        <a href="tel:+541112345678" class="text-decoration-none">+54 11 1234-5678</a>
-      </p>
-      <!-- Redes sociales -->
-      <div class="social-icons d-flex justify-content-center mt-2">
-        <a href="https://www.instagram.com" target="_blank" class="btn-social mx-2">
-          <i class="bi bi-instagram fs-4"></i>
-        </a>
-        <a href="https://www.whatsapp.com/" target="_blank" class="btn-social mx-2">
-          <i class="bi bi-whatsapp fs-4"></i>
-        </a>
-        <a href="https://www.facebook.com" target="_blank" class="btn-social mx-2">
-          <i class="bi bi-facebook fs-4"></i>
-        </a>
-      </div>
-    </div>
-  </footer>
-
+  <div id="footer-placeholder"></div> <!-- Footer se carga aquí -->
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+
+    <script src="./js/loadHeaderFooter.js"></script>
+    <script src="./js/fetchProducts.js"></script>
+    <script src="./js/search.js"></script>
+    
 </body>
 
 </html>

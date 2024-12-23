@@ -1,14 +1,38 @@
 # Che Bonita
-Este proyecto es una **pre-entrega para Talento Tech**, como parte del proceso de evaluación del programa. Se trata de un sitio web ficticio de **Che Bonita**, una tienda en línea (eCommerce) que utiliza tecnologías modernas para crear una experiencia atractiva y responsive para los usuarios.
+
+Este proyecto forma parte del curso **Front-End Talento Tech**, como parte del proceso de evaluación del programa. Se trata de un sitio web ficticio de **Che Bonita**, una tienda en línea (eCommerce) que utiliza tecnologías modernas para crear una experiencia atractiva y responsive para los usuarios.
 
 **Che Bonita** es un sitio web de moda y accesorios enfocado en ofrecer productos con estilo femenino y elegante, inspirado en la identidad argentina. La plataforma permitirá explorar colecciones, categorías y realizar compras en línea. El sitio  presenta para la primer entrega del curso las paginas de: index.html, tienda.html, contacto.html, y proximamente.html.
 Se utilizo flexbox , grid , y posicionamientos.
 Se desarrollaron dos formularios con Formspree, un form de newsletter, y uno de contacto.
+Los productos en la base de datos están organizados en las siguientes categorías en inglés:
+
+- **womens-bags**: Bolsos de mujer
+- **womens-shoes**: Zapatos de mujer
+- **womens-watches**: Relojes de mujer
+- **womens-dresses**: Vestidos de mujer
+- **womens-jewelry**: Joyería de mujer
+- **ediciones-especiales**: Ediciones especiales
+- **gift-cards**: Tarjetas regalo
+
+### Nota
+
+Puedes utilizar estas categorías directamente en las búsquedas o para filtrar productos.
 
 ## Contenido
 
 - [Che Bonita](#che-bonita)
+    - [Nota](#nota)
   - [Contenido](#contenido)
+- [Entrega Final](#entrega-final)
+  - [Detalle de Productos con Thumbnails](#detalle-de-productos-con-thumbnails)
+  - [Consumo de JSON Local y API Externa](#consumo-de-json-local-y-api-externa)
+  - [Creación de Producto Gift Card](#creación-de-producto-gift-card)
+  - [Carrito de Compras Funcional](#carrito-de-compras-funcional)
+  - [Formulario y Checkout](#formulario-y-checkout)
+  - [Buscador Search](#buscador-search)
+  - [Futuras Funcionalidades](#futuras-funcionalidades)
+  - [Resumen Técnico](#resumen-técnico)
   - [Vista Previa](#vista-previa)
   - [Descripción de las secciones del archivo `index.html`](#descripción-de-las-secciones-del-archivo-indexhtml)
     - [1. **Encabezado (Header)**](#1-encabezado-header)
@@ -20,6 +44,57 @@ Se desarrollaron dos formularios con Formspree, un form de newsletter, y uno de 
   - [Instrucciones para ejecutar el proyecto](#instrucciones-para-ejecutar-el-proyecto)
   - [Tecnologías Utilizadas](#tecnologías-utilizadas)
   - [Autor](#autor)
+
+# Entrega Final
+
+En esta entrega, se han agregado y mejorado diversas funcionalidades, llevando el proyecto a un nivel más avanzado:
+
+## Detalle de Productos con Thumbnails
+
+Se implementó un sistema de detalle de productos que incluye imágenes en miniatura (thumbnails). Esto permite a los usuarios ver múltiples vistas de los productos antes de realizar su compra.
+
+## Consumo de JSON Local y API Externa
+
+El proyecto ahora combina datos locales con una API externa:
+
+- **JSON local**: Utilizado para cargar inicialmente los productos y establecer una estructura básica.
+- **API de DummyJSON**: Se integró para complementar los datos locales, proporcionando categorías dinámicas y más realismo en el catálogo.
+
+## Creación de Producto Gift Card
+
+Se diseñó un producto especial llamado "Gift Card" para que los usuarios puedan regalar saldo para compras. Este producto incluyó:
+
+- Un menú desplegable (`<select>`) para seleccionar el monto deseado.
+- La implementación de un `uniqueId` para identificar de forma exclusiva cada tarjeta.
+
+## Carrito de Compras Funcional
+
+El carrito de compras es completamente funcional y cuenta con las siguientes características:
+
+- **Almacenamiento en Local Storage**: Permite a los usuarios mantener los productos seleccionados incluso al cerrar el navegador.
+- **Gestión de Productos**: Los usuarios pueden agregar, eliminar y actualizar la cantidad de productos en el carrito.
+- **Ventajas y Limitaciones**: Aunque Local Storage no es la solución más segura, proporciona velocidad y simplicidad en esta etapa del desarrollo.
+
+## Formulario y Checkout
+
+El proyecto concluye con un sistema de formulario y un proceso de checkout, donde los usuarios ingresan sus datos personales y completan sus compras. Este sistema incluye:
+
+- **Validación básica de datos en el formulario.**
+- **Un flujo de usuario claro** desde el carrito hasta la confirmación de compra.
+  
+## Buscador Search
+
+Se incorporo un buscador funcional. Puede probarse con las categorias del proyecto, DummyJson trabaja en Ingles.
+
+## Futuras Funcionalidades
+
+Quedaron pendientes a realizar: los filtrados de categorias en el aside de la Tienda, y en Dropdwon del Navegable en el Header, los procesos de Login/Logout y la incorporacion de pasarelas de pagos (la compra solo se termina con un sencillo form de checkout).
+
+## Resumen Técnico
+
+- **Frontend**: Se utilizó HTML5, CSS3 y Bootstrap para el diseño responsivo y estilizado del sitio.
+- **Backend**: El consumo de APIs y la integración de datos se gestionaron con JavaScript y `fetch`.
+- **Local Storage**: Implementado como solución para gestionar la persistencia de datos de los usuarios.
 
 ## Vista Previa
 
@@ -98,3 +173,6 @@ Che Bonita fue desarrollado por **Elizabeth Mc Nally**. Para cualquier consulta,
 
 ---
 ¡Gracias por visitar Che Bonita! Sentite Bonita ❤️
+
+
+[def]: #nota
