@@ -2,7 +2,52 @@ document.addEventListener("DOMContentLoaded", () => {
   // Llamar a la función para actualizar el carrito al cargar la página
   actualizarNumeroCarrito();
   renderCart();
-  
+
+  // Botón para mostrar el formulario de checkout
+  const checkoutBtn = document.getElementById("checkout-btn");
+  const checkoutFormContainer = document.getElementById(
+    "checkout-form-container"
+  );
+  const checkoutForm = document.getElementById("checkout-form");
+  const successMessage = document.getElementById("success-message");
+
+  if (checkoutBtn) {
+    // Mostrar formulario de checkout
+    checkoutBtn.addEventListener("click", () => {
+      checkoutFormContainer.classList.remove("hidden");
+    });
+  }
+
+  // Manejar el envío del formulario de checkout
+  if (checkoutForm) {
+    checkoutForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      // Obtener datos del formulario
+      const customerName = document.getElementById("customer-name").value;
+      const customerEmail = document.getElementById("customer-email").value;
+      const customerAddress = document.getElementById("customer-address").value;
+      const paymentMethod = document.getElementById("payment-method").value;
+
+      // Validar datos (opcional, ya hay validaciones básicas en el HTML)
+
+      // Simular envío de datos al backend
+      console.log("Enviando datos de compra...");
+      console.log({
+        customerName,
+        customerEmail,
+        customerAddress,
+        paymentMethod,
+      });
+
+      // Vaciar el carrito
+      localStorage.removeItem("cart");
+
+      // Mostrar mensaje de éxito
+      checkoutFormContainer.classList.add("hidden");
+      successMessage.classList.remove("hidden");
+    });
+  }
 });
 
 // Funciones auxiliares para manejar `localStorage`
